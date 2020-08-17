@@ -1,0 +1,28 @@
+#ElementTable{
+    float: left;
+
+};
+#ElementTable tr{
+/* min-width: 100%; */
+};
+#ElementTable  h2{
+    text-decoration-color: blue;
+    /* font-size: small; */
+};
+#containerTable{
+    /* width: 100%;
+    float: left; */
+};
+h4{
+  font-size: 5px;  
+}
+.elementField{
+   width: 50px;
+    background-color: blue;
+    
+
+};
+.elementField h4{ 
+    font-size: 6px;
+
+};
