@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-periodic-detail',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeriodicDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(public messageService: MessageService) { }
 
   ngOnInit(): void {
   }

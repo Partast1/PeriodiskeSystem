@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PeroidicService } from '../peroidic.service'
 import { Element } from '../element';
+import { PeroidicService } from '../peroidic.service'
+import { MessageService } from '../message.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-periodic-display',
@@ -9,21 +11,20 @@ import { Element } from '../element';
 })
 export class PeriodicDisplayComponent implements OnInit {
   
-  constructor(private peroidicService: PeroidicService) { }
+  constructor(private peroidicService: PeroidicService, private messageService: MessageService) { }
 
   element: Element;
 Elements: Element[]=[];
 selectedEle: Element;
 
   ngOnInit(): void {
-    console.log('testtest');
     this.Elements = this.peroidicService.MapData();
     
   }
-  // onSelect(ele: Element): void {
-  //   this.selectedEle = ele;
-  //   this.peroidicService.add(`Dictator description=${ele.standardPhase}`);
-  // }
+  onSelect(ele: Element): void {
+    this.selectedEle = ele;
+    this.messageService.add(`Element description=${ele.standardPhase}`);
+  }
   // getElements(i: number): Element {
   //   let element = this.Elements.push();
   //   return this.element;

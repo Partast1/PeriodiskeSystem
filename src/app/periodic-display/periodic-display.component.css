@@ -1,28 +1,62 @@
 #ElementTable{
     float: left;
 
-};
+}
 #ElementTable tr{
 /* min-width: 100%; */
-};
+}
 #ElementTable  h2{
-    text-decoration-color: blue;
+    /* text-decoration-color: blue; */
     /* font-size: small; */
-};
+}
 #containerTable{
     /* width: 100%;
     float: left; */
-};
+}
 h4{
-  font-size: 5px;  
+  font-size: 24px;  
+}
+.yel{
+     background-color: yellow ;
+ }
+ .aqua{
+     background-color: aqua ;
+    }
+.pink{
+    background-color: pink;
+}
+.lgreen{
+    background-color: lightgreen;
+}
+.lgrey{
+    background-color: lightgrey;
+}
+.dgrey{
+    background-color: grey;
+}
+.dgreen{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.plum{
+    background-color: plum;
+}
+.purple{
+    background-color: purple;
+
 }
 .elementField{
    width: 50px;
-    background-color: blue;
-    
+    /* background-color: blue;   */
 
-};
+}
 .elementField h4{ 
-    font-size: 6px;
+    /* font-size: 26px; */
 
-};
+}
+
