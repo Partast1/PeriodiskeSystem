@@ -14,7 +14,7 @@ export class PeriodicDisplayComponent implements OnInit {
   constructor(private peroidicService: PeroidicService, private messageService: MessageService) { }
 
   element: Element;
-Elements: Element[]=[];
+Elements: Element[];
 selectedEle: Element;
 
   ngOnInit(): void {
