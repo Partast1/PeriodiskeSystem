@@ -6,7 +6,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PeriodicDisplayComponent } from './periodic-display/periodic-display.component';
-import {PeroidicService} from './peroidic.service';
+//import {PeroidicService} from './peroidic.service';
 import { PeriodicDetailComponent } from './periodic-detail/periodic-detail.component';
 
 @NgModule({
@@ -25,5 +25,5 @@ import { PeriodicDetailComponent } from './periodic-detail/periodic-detail.compo
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(private service:PeroidicService){}
+  constructor(/*private service:PeroidicService*/){}
  }

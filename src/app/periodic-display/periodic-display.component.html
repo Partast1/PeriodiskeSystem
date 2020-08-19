@@ -1,21 +1,13 @@
+<div (click)="test2();">
+ <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p> abc
+</div>
 
-<div class="Card-container" >
-<ul class="dictators">
-  <li *ngFor=" let element of Elements"
-      [class.selected]="element === selectedEle"
-      (click)="onSelect(element)">
-    <div id="firstName">
-         Name: 
-         {{Elements[0].symbol}}
-        </div>
-        <!-- [class.selected]="Element === selectedEle"
-        (click)="onSelect(Element)" -->
+<button (click)="test2();">ddeod</button>
 
-  </li>
-</ul>
 <table id="ElementTable" class="table" >
+  <!--[class.selected]="Elements === selectedEle"
+  (click)="onSelect(Elements)"  -->
   
- 
     <!-- Row 1 -->
 <tr>
     <th>Group</th> <th>1 Alkali metals</th><th>2 Alkaline earth metals</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15 Pnicto­gens</th><th>16 Chal­co­gens</th><th>17 Halo­gens</th><th>18 Noble gases</th>
@@ -28,9 +20,9 @@
 <!-- Row 3 -->
 <tr>
 <th>2</th> <td><div class="elementField card red"><h4>{{Elements[2].symbol}}</h4>{{Elements[2].atomicNumber}}</div></td>
-<td><div class="elementField card orange"><h4>{{Elements[3].symbol}}</h4>{{Elements[3].atomicNumber}}</div></td>
+<td><div class="elementField card orange" (click)="onS()"><h4>{{Elements[3].symbol}}</h4>{{Elements[3].atomicNumber}}</div></td>
 <td colspan="10"></td>
-<td><div class="elementField card dgreen"><h4>{{Elements[4].symbol}}</h4>{{Elements[4].atomicNumber}}</div></td>
+<td><div class="elementField card dgreen" (click)="onSelect(Elements[4])"><h4>{{Elements[4].symbol}}</h4>{{Elements[4].atomicNumber}}</div></td>
 <td><div class="elementField card yel"><h4>{{Elements[5].symbol}}</h4>{{Elements[5].atomicNumber}}</div></td>
 <td><div class="elementField card yel"><h4>{{Elements[6].symbol}}</h4>{{Elements[6].atomicNumber}}</div></td>
 <td><div class="elementField card yel"><h4>{{Elements[7].symbol}}</h4>{{Elements[7].atomicNumber}}</div></td>
@@ -186,6 +178,4 @@
   </tr>
 </table>
 
-<!-- </div> -->
 
-</div>

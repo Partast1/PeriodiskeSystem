@@ -9,6 +9,7 @@ export class Element {
     constructor(AtomicNumber:number,Name:string,Symbol: string,AtomicMass:number,StandardPhase:string){
         this.atomicNumber = AtomicNumber;
         this.name = Name;
+        // this.symbol = 'x';
         this.symbol = Symbol;
         this.atomicMass = AtomicMass;
         this.standardPhase = StandardPhase;
