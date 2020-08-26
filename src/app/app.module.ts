@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { PeriodicDisplayComponent } from './periodic-display/periodic-display.component';
 //import {PeroidicService} from './peroidic.service';
 import { PeriodicDetailComponent } from './periodic-detail/periodic-detail.component';
+import { PeriodicDisplay2Component } from './periodic-display2/periodic-display2.component';
+import { InputElementComponent } from './input-element/input-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeriodicDisplayComponent,
-    PeriodicDetailComponent
+    PeriodicDetailComponent,
+    PeriodicDisplay2Component,
+    InputElementComponent
   ],
   imports: [
     BrowserModule,

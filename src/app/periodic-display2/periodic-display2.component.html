@@ -1,0 +1,46 @@
+<!-- <div *ngFor="let element of Elements; let i=index; let odd=odd; trackBy: trackById" [class.odd]="odd">
+  {{element.name}}
+  {{element.symbol}}
+</div>
+
+<ng-template ngFor let-hero [ngForOf]="Elements" let-i="index" let-odd="odd" [ngForTrackBy]="trackById">
+    <div [class.odd]="odd">{{Elements[index]}</div>
+    <div [class.odd]="odd">{{Elements[1]}</div>
+
+  </ng-template> -->
+
+  <table id="ElementTable" class="table" *ngFor=" let element of Elements"
+[class.selected]="element === selectedEle"
+(click)="onSelect(element)">
+  <!--[class.selected]="Elements === selectedEle"
+  (click)="onSelect(Elements)"  -->
+  <div class="list"  *ngIf="className |" >
+  
+    <!-- Row 1 -->
+<tr>
+    <th>Group</th> <th>1 Alkali metals</th><th>2 Alkaline earth metals</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15 Pnicto­gens</th><th>16 Chal­co­gens</th><th>17 Halo­gens</th><th>18 Noble gases</th>
+</tr>
+<!-- Row 2 --> 
+<tr>
+<th>1</th> <td><div class="elementField card yel" [className]="'active'"></div>><h4> {{element.symbol}}</h4>{{element.atomicNumber}}</div> </td><td colspan="16"></td> <td><div class="elementField card aqua"><h4> {{element.symbol}}</h4>{{element.atomicNumber}}</div></td>
+
+</tr>
+<!-- Row 3 -->
+<tr>
+<th>2</th> <td><div class="elementField card red"><h4>{{Elements[2].symbol}}</h4>{{Elements[2].atomicNumber}}</div></td>
+<td><div class="elementField card orange" (click)="onS()"><h4>{{Elements[3].symbol}}</h4>{{Elements[3].atomicNumber}}</div></td>
+<td colspan="10"></td>
+<td><div class="elementField card dgreen" (click)="onSelect(Elements[4])"><h4>{{Elements[4].symbol}}</h4>{{Elements[4].atomicNumber}}</div></td>
+<td><div class="elementField card yel"><h4>{{Elements[5].symbol}}</h4>{{Elements[5].atomicNumber}}</div></td>
+<td><div class="elementField card yel"><h4>{{Elements[6].symbol}}</h4>{{Elements[6].atomicNumber}}</div></td>
+<td><div class="elementField card yel"><h4>{{Elements[7].symbol}}</h4>{{Elements[7].atomicNumber}}</div></td>
+<td><div class="elementField card yel"><h4>{{Elements[8].symbol}}</h4>{{Elements[8].atomicNumber}}</div></td>
+<td><div class="elementField card aqua"><h4>{{Elements[9].symbol}}</h4>{{Elements[9].atomicNumber}}</div></td>
+
+
+</tr>
+</div>
+
+  </table>
+
+

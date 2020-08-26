@@ -22,26 +22,14 @@ selectedEle: Element;
 
 
   ngOnInit(): void {
-    console.log("tester 123jjjjjjjjjjjjjjjjjjjjjj5");
    this.Elements = this.peroidicService.MapData();
-
- 
-  }
-
-  test2():void{
-alert("Halloooooooooooojjjjjjjjjjjjjjjjjjjjjjjjjooojjjjoooo");
-console.log("tester");
   }
 
   onSelect(t:Element): void {
    //this.selectedEle = ele;
     console.log(t.name);
     alert(t);
-
 //    this.messageService.add(`Element description=${ele.standardPhase}`);
-  }
-  onS(){
-    console.log('HEJ');
   }
   // getElements(i: number): Element {
   //   let element = this.Elements.push();
